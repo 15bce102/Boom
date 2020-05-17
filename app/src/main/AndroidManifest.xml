@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.boss.boom">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/laddu_round"
+        android:label="LADDU"
+        android:roundIcon="@mipmap/laddu_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.boss.boom.ResultActivity" />
+        <activity android:name="com.boss.boom.Rules" />
+        <activity android:name="com.boss.boom.Play" />
+        <activity
+            android:name="com.boss.boom.Introduction"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_introduction"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name="com.boss.boom.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:enabled="true" android:name="com.boss.boom.SoundHandler" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5681723961160711~7963339365"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Boom</string>
+
+    <string name="title_activity_introduction">Introduction</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="play">Play</string>
+    <string name="rules">Rules</string>
+    <string name="quit">Quit</string>
+    <string name="button">Button</string>
+    <string name="start">START</string>
+    <string name="textview">TextView</string>
+    <string name="hello">HELLO</string>
+    <string name="laddu">LADDU</string>
+    <string name="todo">TODO</string>
+    <string-array name="value">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+</resources>

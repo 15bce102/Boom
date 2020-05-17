@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/browser_actions_context_menu_min_padding"
+
+    tools:context=".Introduction">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_gravity="center"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:text=""
+            android:id="@+id/textView"
+            android:textSize="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:shadowColor="#FBFAFA"
+            android:text="Welcome to"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/taptap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome"
+            android:layout_centerHorizontal="true"
+            android:text="TAP TAP"
+            android:textColor="#000000"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/laddu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taptap"
+            android:layout_centerHorizontal="true"
+            android:text="LADDU"
+            android:textColor="#000000"
+            android:textSize="75dp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/changeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/laddu"
+            android:layout_centerHorizontal="true"
+            android:text="Choose your value"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/changeValue"
+            android:layout_centerHorizontal="true"
+            android:popupBackground="@color/background" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_button"
+            android:shadowColor="@android:color/background_light"
+            android:text="@string/play"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_button"
+            android:shadowColor="@android:color/background_light"
+            android:text="@string/rules"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rules"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_button"
+            android:shadowColor="@android:color/background_light"
+            android:text="@string/quit"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
